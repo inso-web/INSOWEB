@@ -17,7 +17,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+   
     
 }
 
@@ -31,7 +31,7 @@ header {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    width: 99%;
+    width: 100%;
     padding: 0px 25px;
     background: black;
     display: flex;
@@ -41,7 +41,7 @@ header {
 }
 
 .logo img{
-    width: 120px;
+    width: 100px;
     margin-left: 100px;
     
 }
@@ -651,7 +651,7 @@ details p{
     position:relative;
     overflow:hidden;
     background:#fff;
-    padding:40px;
+    padding:20px;
     width:240px;
     border-radius:25px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -690,6 +690,8 @@ details p{
     position:relative;
     z-index:1;
     transition:.4s;
+    
+    
 }
 
 .cardc:hover i,
@@ -734,6 +736,49 @@ align-items: center;
     padding: 0 12px 0 0;
     color:white;
  }
+@media(max-width: 1023px){
+    header{
+        padding: 12px 20px;
+     }
+   .navigation{
+    padding-left:10px;
+   }
+    .title{
+        font-size: 1.8em;
+    }
+    .main{
+        padding:80px 20px;
+    }
+    .section-content h2{
+        font-size: 1em;
+    }
+    .section-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:641px) {
+    body{
+        font-size: 12px;
+    }
+    .section-content h2{
+        font-size: 0.8em;
+    }
+    .section-content h3{
+        font-size: 1.4em;
+    }
+    
+}
+@media(max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
+
+
  @media(max-width: 1023px){
     header{
         padding: 12px 20px;
