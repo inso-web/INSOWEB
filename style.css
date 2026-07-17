@@ -821,7 +821,6 @@ header{
     padding-top:40px;
     transition:.4s;
     overflow-y: auto;
-    -webkit-overflow-scrolling:touch;
 
 }
 
