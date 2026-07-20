@@ -88,12 +88,12 @@ header {
 }
 #menu-btn{
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
     margin-left: auto;
     position: relative;
     z-index: 1001;
-    padding: 30px;
+    padding: 10px;
     
 }
 
@@ -882,6 +882,16 @@ footer{
 }
 
 }
+
+
+@media (max-width: 600px) {
+  #menu-btn {
+    padding: 8px;
+    font-size: 22px;
+    
+  }
+}
+
 
 @media (max-width: 600px) {
   section.services {
