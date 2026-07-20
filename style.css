@@ -61,7 +61,7 @@ header {
     border-left: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    overflow-y: scroll;
+    overflow-y: auto;
     overscroll-behavior: contain;
     max-height: 100vh;
 }
@@ -312,7 +312,7 @@ section.services{
     align-items: center;
     width:70px;
     height:70px;
-    font-size:28px;
+   font-size: clamp(30px, 5vw, 60px);
     border-radius:50%;
     font-size:32px;
     color:#fff;
@@ -812,7 +812,7 @@ header{
     top:70px;
     right:-100%;
     width:250px;
-    height:100vh;
+    height:calc(100vh-70px);
     background:#111;
     display:flex;
     flex-direction:column;
@@ -831,6 +831,10 @@ header{
 .about,
 .contact{
     flex-direction:column;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .services,
@@ -879,6 +883,12 @@ footer{
 
 }
 
+@media (max-width: 600px) {
+  section.services {
+    padding: 60px 4%;
+  }
+}
+
 
 /* ===========================
    SMALL PHONES
@@ -891,8 +901,6 @@ footer{
 }
 
 
-.btn{
-    width:100%;
 }
 
 
@@ -901,8 +909,36 @@ header{
     padding:12px 15px;
 }
 
-}
+
 @media (max-width: 768px) {
+
+.main-title{
+        width:90%;
+        font-size:2rem;
+        line-height:1.4;
+        top:45%;
+    }
+.main-title .thin{
+        display:block;
+        font-size:0.8em;
+    }
+
+.btn{
+         position:absolute;
+        left:50%;
+        top:90%;
+        transform:translate(-50%,-50%);
+        width:80%;
+        max-width:280px;
+        margin:0;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    text-align: center;
+    }
+
+
 
     .about{
         display: flex;
