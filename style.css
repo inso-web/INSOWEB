@@ -45,25 +45,19 @@ header {
     margin-left: 100px;
     
 }
-.navbar {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding-top: 80px;
-    transition: right 0.4s ease;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.6);
-    border-left: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    max-height: 100vh;
+.navbar{
+    position:fixed;
+    top:0;
+    right:-320px;
+    width:300px;
+    height:100vh;
+    background:#111;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    transition:.4s ease;
 }
 
 .navbar.active{
@@ -75,25 +69,18 @@ header {
     text-decoration: none;
     color: white;
     font-size: 22px;
-    font-weight: 500;
-    border-radius: 20px;
-    padding: 20px;
+    transition: 0.3s;
 }
 .navbar a:hover{
-    color: black;
-    background-color: white;
-    transform: translateX(8px);
-    transition: 0.3s;
+    color: #2563eb;
 
 }
 #menu-btn{
-    color: white;
-    font-size: 24px;
+    color: #fff;
+    font-size: 30px;
     cursor: pointer;
-    margin-left: auto;
-    position: relative;
-    z-index: 1001;
-    padding: 10px;
+    z-index: 1002;
+   
     
 }
 
@@ -801,28 +788,16 @@ header{
     width:140px;
 }
 
-#menu-btn{
-    display:block;
-    font-size:30px;
-    cursor:pointer;
-}
+ #menu-btn{
+        font-size:26px;
+    }
 
 .navbar{
-    position:fixed;
-    top:70px;
-    right:-100%;
-    width:250px;
-    height:calc(100vh-70px);
-    background:#111;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:30px;
-    padding-top:40px;
-    transition:.4s;
-    overflow-y: auto;
-
-}
+        width:250px;
+    }
+ .navbar a{
+        font-size:18px;
+    }
 
 .navbar.active{
     right:0;
